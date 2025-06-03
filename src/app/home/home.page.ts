@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EventTrackingService } from '../services/event-tracking.service';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private eventTrackingService: EventTrackingService) {}
 
+
+  menuOpened(){
+    this.eventTrackingService.trackEvent("MENU_OPENED");
+  }
 }
