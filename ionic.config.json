@@ -1,0 +1,7 @@
+{
+  "name": "ionic-responsive-grid",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
